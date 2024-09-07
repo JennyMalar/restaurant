@@ -1,0 +1,132 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;  
+}
+
+body {
+    background-color: #FAF0E6;  
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.page-container {
+    width: 100%;
+    max-width: 900px;
+    background-color: #fff;
+    padding: 20px;
+    border: 5px solid #8B4513;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #B22222;  
+    margin-bottom: 30px;
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #8B4513;  
+    margin: 0 15px;
+    padding: 10px;
+    background-color: #FFD700;  
+    border-radius: 5px;
+    transition: background-color 0.3s, border-bottom 0.3s;
+}
+
+nav a:hover {
+    background-color: #FF6347;  
+    border-bottom: 2px solid #B22222;  
+}
+
+.section h2 {
+    font-size: 22px;
+    color: #B22222;  
+    border-bottom: 2px solid #FFD700;  
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    background-color: #F5DEB3;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    background-color: #FFF8DC;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.menu-item-name {
+    font-weight: bold;
+    color: #333;
+}
+
+.price {
+    font-weight: bold;
+    color: #8B4513;  
+}
+
+.menu-description {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .menu-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-item-name, .price {
+        font-size: 16px;
+    }
+
+    .menu-description {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    h3 {
+        font-size: 20px;
+    }
+
+    .section h2 {
+        font-size: 18px;
+    }
+
+    .menu-item-name, .price {
+        font-size: 14px;
+    }
+
+    .menu-description {
+        font-size: 12px;
+    }
+}
